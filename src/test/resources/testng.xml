@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Multi-Site Test Suite" parallel="tests" thread-count="3">
+    <test name="Example.com Tests">
+        <parameter name="baseUrl" value="https://unsplash.com"/>
+        <classes>
+            <class name="com.example.tests.UnsplashTest.java"/>
+        </classes>
+    </test>
+</suite>
